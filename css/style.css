@@ -1,0 +1,43 @@
+.appHeader {
+    text-align: center;
+    background-color: #343a4a;
+    color: #f8f9fa;
+}
+
+#cityNm, #date {
+    font-size: 1.8em;
+}
+
+#icon {
+    height: 50px;
+}
+
+.label, .value {
+    display: inline;
+    float: left;
+}
+
+.low {
+    background-color: #43BA1F;
+    color: white;
+}
+
+.moderate {
+    background-color: #FCC722;
+    color: black;
+}
+
+.high {
+    background-color: #FB731B;
+    color: white;
+}
+
+.v-high {
+    background-color: #F81016;
+    color: white;
+}
+
+.extreme {
+    background-color: #856FFF;
+    color: white;
+}

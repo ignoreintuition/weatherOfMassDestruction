@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    </head>
+        <body>
+            <div class="appHeader">
+                <h1>Hello Weather!</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <form>
+                            <label for="city">Search for a City:</label>
+                            <div class="row">
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="city"> 
+                                </div>
+                                <div class="col-4">
+                                    <button type="submit" id="submit" class="btn btn-primary fas fa-search"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="history" class="col-8 btn-group-vertical">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-9">
+                        <div class="jumbotron">
+                            <div class="row">
+                                <div id="cityNm" class="col-3">{City Name}</div>
+                                <div id="date" class="col-3">{Date}</div>
+                                <div class="col-2"><img src="" id="icon"></div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3 label"> Temperature: </div>
+                                    <div class="value" id="temp"> {temp} </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 label"> Humidity: </div>
+                                    <div class="value" id="humidity"> {humidity} </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 label"> Wind Speed: </div>
+                                    <div class="value" id="wind"> {wind} </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 label"> UV Index: </div>
+                                    <div class="value" id="uv"> {uv} </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="col-2 card-0" style="width: 18rem;">
+                                <div id="cardDay-0" class="card-body">
+                                    <h5 id="date-0" class="card-title">{date}</h5>
+                                    <div><img src="" id="icon-0"></div>
+                                    <div class="value" id="temp-0"> {temp} </div>
+                                    <div class="value" id="humidity-0"> {humidity} </div>
+                                </div>
+                            </div>
+                            <div class="col-2 card-1" style="width: 18rem;">
+                                <div id="cardDay-1" class="card-body">
+                                    <h5 id="date-1" class="card-title">{date}</h5>
+                                    <div><img src="" id="icon-1"></div>
+                                    <div class="value" id="temp-1"> {temp} </div>
+                                    <div class="value" id="humidity-1"> {humidity} </div>
+                                </div>
+                            </div>
+                            <div class="col-2 card-2" style="width: 18rem;">
+                                <div id="cardDay-2" class="card-body">
+                                    <h5 id="date-2" class="card-title">{date}</h5>
+                                    <div><img src="" id="icon-2"></div>
+                                    <div class="value" id="temp-2"> {temp} </div>
+                                    <div class="value" id="humidity-2"> {humidity} </div>
+                                </div>
+                            </div>
+                            <div class="col-2 card-3" style="width: 18rem;">
+                                <div id="cardDay-3" class="card-body">
+                                    <h5 id="date-3" class="card-title">{date}</h5>
+                                    <div><img src="" id="icon-3"></div>
+                                    <div class="value" id="temp-3"> {temp} </div>
+                                    <div class="value" id="humidity-3"> {humidity} </div>
+                                </div>
+                            </div>
+                            <div class="col-2 card-4" style="width: 18rem;">
+                                <div id="cardDay-4" class="card-body">
+                                    <h5 id="date-4" class="card-title">{date}</h5>
+                                    <div><img src="" id="icon-4"></div>
+                                    <div class="value" id="temp-4"> {temp} </div>
+                                    <div class="value" id="humidity-4"> {humidity} </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <script src="node_modules/jquery/dist/jquery.min.js"> </script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script>
+            <script src="dist/bundle.js" type="module"> </script>
+        </body>
+</html>
